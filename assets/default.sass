@@ -1,0 +1,102 @@
+html
+    font-size: 10px
+    scroll-behavior: smooth
+    font-family: $popins
+
+*, *:before, *:after
+    box-sizing: border-box
+    margin: 0
+
+.app
+    display: grid
+    grid-auto-rows: auto 1fr auto
+    min-height: 100vh
+
+    & > *
+        min-width: 0
+        min-height: 0
+
+a
+    text-decoration: none
+    color: inherit
+
+ul
+    padding: 0
+    margin: 0
+
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+input,
+textarea
+    outline: none
+    font-size: 1.6rem
+    border-radius: .3rem
+
+    &:focus
+        outline: none
+
+main
+    overflow: hidden
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+input[type=number]
+    -moz-appearance: textfield
+
+.container
+    max-width: 1160px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+.reset-btn
+    border: none
+    background: transparent
+    outline: none
+    padding: 0
+    cursor: pointer
+
+    &:focus
+        outline: none
+
+.default__wrap
+    display: flex
+    flex-direction: column
+    height: calc(100vh - 10rem)
+    justify-content: flex-end
+    align-items: flex-end
+
+.default-text__wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 6rem
+    flex-direction: column
+
+.default-product__subtitle
+    font-family: $popins
+    font-weight: 700
+    font-size: 2rem
+    line-height: 3rem
+    color: $black
+    margin-bottom: 1.2rem
+
+.default-product__descr
+    font-family: $popins
+    font-weight: 400
+    font-size: 1.5rem
+    line-height: 2.2rem
+    color: $black
+
+.default-card__wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: -1rem .5rem
+    flex-wrap: wrap
